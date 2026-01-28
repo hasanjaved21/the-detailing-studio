@@ -691,6 +691,18 @@ ul {
   color: var(--color-text-muted);
 }
 
+/* ========== Scroll Reveal Animations ========== */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Specific images for each Before / After tile */
 .gallery-item:nth-child(1) .gallery-before {
   background-image: url("before1.jpg");
